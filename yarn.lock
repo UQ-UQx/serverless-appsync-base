@@ -795,6 +795,14 @@
     "@hapi/boom" "7.x.x"
     "@hapi/hoek" "6.x.x"
 
+"@hapi/accept@^3.2.4":
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/@hapi/accept/-/accept-3.2.4.tgz#687510529493fe1d7d47954c31aff360d9364bd1"
+  integrity sha512-soThGB+QMgfxlh0Vzhzlf3ZOEOPk5biEwcOXhkF0Eedqx8VnhGiggL9UYHrIsOb1rUg3Be3K8kp0iDL2wbVSOQ==
+  dependencies:
+    "@hapi/boom" "7.x.x"
+    "@hapi/hoek" "8.x.x"
+
 "@hapi/address@2.x.x":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"
@@ -806,6 +814,13 @@
   integrity sha512-iFQBEfm3WwWy8JdPQ8l6qXVLPtzmjITVfaxwl6dfoP8kKv6i2Uk43Ax+ShkNfOVyfEnNggqL2IyZTY3DaaRGNg==
   dependencies:
     "@hapi/hoek" "6.x.x"
+
+"@hapi/ammo@^3.1.2":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@hapi/ammo/-/ammo-3.1.2.tgz#a9edf5d48d99b75fdcd7ab3dabf9059942a06961"
+  integrity sha512-ej9OtFmiZv1qr45g1bxEZNGyaR4jRpyMxU6VhbxjaYThymvOwsyIsUKMZnP5Qw2tfYFuwqCJuIBHGpeIbdX9gQ==
+  dependencies:
+    "@hapi/hoek" "8.x.x"
 
 "@hapi/b64@4.x.x":
   version "4.2.0"
@@ -842,6 +857,14 @@
     "@hapi/boom" "7.x.x"
     "@hapi/hoek" "6.x.x"
 
+"@hapi/call@^5.1.3":
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/@hapi/call/-/call-5.1.3.tgz#217af45e3bc3d38b03aa5c9edfe1be939eee3741"
+  integrity sha512-5DfWpMk7qZiYhvBhM5oUiT4GQ/O8a2rFR121/PdwA/eZ2C1EsuD547ZggMKAR5bZ+FtxOf0fdM20zzcXzq2mZA==
+  dependencies:
+    "@hapi/boom" "7.x.x"
+    "@hapi/hoek" "8.x.x"
+
 "@hapi/catbox-memory@4.x.x":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@hapi/catbox-memory/-/catbox-memory-4.1.0.tgz#cb5fbaf45c52beb44766dae018a2aee7b43e9c88"
@@ -867,12 +890,24 @@
   dependencies:
     "@hapi/boom" "7.x.x"
 
+"@hapi/content@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@hapi/content/-/content-4.1.1.tgz#179673d1e2b7eb36c564d8f9605d019bd2252cbf"
+  integrity sha512-3TWvmwpVPxFSF3KBjKZ8yDqIKKZZIm7VurDSweYpXYENZrJH3C1hd1+qEQW9wQaUaI76pPBLGrXl6I3B7i3ipA==
+  dependencies:
+    "@hapi/boom" "7.x.x"
+
 "@hapi/cryptiles@4.x.x", "@hapi/cryptiles@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@hapi/cryptiles/-/cryptiles-4.2.0.tgz#d22bd5afa54f3c1a3b944a43dadfd4c5e5747f72"
   integrity sha512-P+ioMP1JGhwDOKPRuQls6sT/ln6Fk+Ks6d90mlBi6HcOu5itvdUiFv5Ynq2DvLadPDWaA43lwNxkfZrjE9s2MA==
   dependencies:
     "@hapi/boom" "7.x.x"
+
+"@hapi/file@1.x.x":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@hapi/file/-/file-1.0.0.tgz#c91c39fd04db8bed5af82d2e032e7a4e65555b38"
+  integrity sha512-Bsfp/+1Gyf70eGtnIgmScvrH8sSypO3TcK3Zf0QdHnzn/ACnAkI6KLtGACmNRPEzzIy+W7aJX5E+1fc9GwIABQ==
 
 "@hapi/h2o2@^8.3.0":
   version "8.3.0"
@@ -908,6 +943,30 @@
     "@hapi/teamwork" "3.x.x"
     "@hapi/topo" "3.x.x"
 
+"@hapi/hapi@^18.4.1":
+  version "18.4.1"
+  resolved "https://registry.yarnpkg.com/@hapi/hapi/-/hapi-18.4.1.tgz#023fbc131074b1cb2cd7f6766d65f4b0e92df788"
+  integrity sha512-9HjVGa0Z4Qv9jk9AVoUdJMQLA+KuZ+liKWyEEkVBx3e3H1F0JM6aGbPkY9jRfwsITBWGBU2iXazn65SFKSi/tg==
+  dependencies:
+    "@hapi/accept" "^3.2.4"
+    "@hapi/ammo" "^3.1.2"
+    "@hapi/boom" "7.x.x"
+    "@hapi/bounce" "1.x.x"
+    "@hapi/call" "^5.1.3"
+    "@hapi/catbox" "10.x.x"
+    "@hapi/catbox-memory" "4.x.x"
+    "@hapi/heavy" "6.x.x"
+    "@hapi/hoek" "8.x.x"
+    "@hapi/joi" "15.x.x"
+    "@hapi/mimos" "4.x.x"
+    "@hapi/podium" "3.x.x"
+    "@hapi/shot" "4.x.x"
+    "@hapi/somever" "2.x.x"
+    "@hapi/statehood" "6.x.x"
+    "@hapi/subtext" "^6.1.3"
+    "@hapi/teamwork" "3.x.x"
+    "@hapi/topo" "3.x.x"
+
 "@hapi/heavy@6.x.x":
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/@hapi/heavy/-/heavy-6.2.0.tgz#b6c30578e1f30ab6ca17a818772f11b1116ba8cc"
@@ -921,6 +980,11 @@
   version "6.2.4"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-6.2.4.tgz#4b95fbaccbfba90185690890bdf1a2fbbda10595"
   integrity sha512-HOJ20Kc93DkDVvjwHyHawPwPkX44sIrbXazAUDiUXaY2R9JwQGo2PhFfnQtdrsIe4igjG2fPgMra7NYw7qhy0A==
+
+"@hapi/hoek@8.x.x":
+  version "8.5.1"
+  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-8.5.1.tgz#fde96064ca446dec8c55a8c2f130957b070c6e06"
+  integrity sha512-yN7kbciD87WzLGc5539Tn0sApjyiGHAJgKvG9W8C7O+6c7qmoQMfVs0W4bX17eqz6C78QJqqFrtgdK5EWf6Qow==
 
 "@hapi/iron@5.x.x":
   version "5.1.0"
@@ -966,6 +1030,17 @@
     "@hapi/boom" "7.x.x"
     "@hapi/content" "4.x.x"
     "@hapi/hoek" "6.x.x"
+    "@hapi/nigel" "3.x.x"
+
+"@hapi/pez@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@hapi/pez/-/pez-4.1.2.tgz#14984d0c31fed348f10c962968a21d9761f55503"
+  integrity sha512-8zSdJ8cZrJLFldTgwjU9Fb1JebID+aBCrCsycgqKYe0OZtM2r3Yv3aAwW5z97VsZWCROC1Vx6Mdn4rujh5Ktcg==
+  dependencies:
+    "@hapi/b64" "4.x.x"
+    "@hapi/boom" "7.x.x"
+    "@hapi/content" "^4.1.1"
+    "@hapi/hoek" "8.x.x"
     "@hapi/nigel" "3.x.x"
 
 "@hapi/podium@3.x.x":
@@ -1015,6 +1090,19 @@
     "@hapi/content" "4.x.x"
     "@hapi/hoek" "6.x.x"
     "@hapi/pez" "4.x.x"
+    "@hapi/wreck" "15.x.x"
+
+"@hapi/subtext@^6.1.3":
+  version "6.1.3"
+  resolved "https://registry.yarnpkg.com/@hapi/subtext/-/subtext-6.1.3.tgz#bbd07771ae2a4e73ac360c93ed74ac641718b9c6"
+  integrity sha512-qWN6NbiHNzohVcJMeAlpku/vzbyH4zIpnnMPMPioQMwIxbPFKeNViDCNI6fVBbMPBiw/xB4FjqiJkRG5P9eWWg==
+  dependencies:
+    "@hapi/boom" "7.x.x"
+    "@hapi/bourne" "1.x.x"
+    "@hapi/content" "^4.1.1"
+    "@hapi/file" "1.x.x"
+    "@hapi/hoek" "8.x.x"
+    "@hapi/pez" "^4.1.2"
     "@hapi/wreck" "15.x.x"
 
 "@hapi/teamwork@3.x.x":
@@ -5627,9 +5715,9 @@ mississippi@^3.0.0:
     through2 "^2.0.0"
 
 mixin-deep@^1.2.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.1.tgz#a49e7268dce1a0d9698e45326c5626df3543d0fe"
-  integrity sha512-8ZItLHeEgaqEvd5lYBXfm4EZSFCX29Jb9K+lAHhDKzReKBQKj3R+7NOF6tjqYi9t4oI8VUfaWITJQm86wnXGNQ==
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.2.tgz#1120b43dc359a785dce65b55b82e257ccf479566"
+  integrity sha512-WRoDn//mXBiJ1H40rqa3vH0toePwSsGb45iInWlTySa+Uu4k3tYUSxa2v1KqAiLtvlrSzaExqS1gtk96A9zvEA==
   dependencies:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
